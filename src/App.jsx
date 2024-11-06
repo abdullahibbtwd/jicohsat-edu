@@ -49,7 +49,7 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <main className='overflow-x-hidden bg-white text-dark'>
-      <RouterProvider router={router} />
+      <RouterProvider router={router} basename="/jicosat-edu/" />
     </main>
   )
 }

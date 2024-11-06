@@ -8,7 +8,7 @@ import Campus from './component/Campus/Campus'
 import Contact from './component/Contact/Contact'
 import Footer from './component/Footer/Footer'
 import Login from "./component/Login/Login"
-import { createBrowserRouter, Routes, Route, RouterProvider, } from 'react-router-dom';
+import { createBrowserRouter, Routes, Route, RouterProvider, BrowserRouter, } from 'react-router-dom';
 import Register from './component/Register/Register'
 
 const Layout = () => {
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <main className='overflow-x-hidden bg-white text-dark'>
-      <RouterProvider router={router} basename="/jicosat-edu/" />
+      <RouterProvider router={router}  basename="/" />
     </main>
   )
 }

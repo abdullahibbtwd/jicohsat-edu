@@ -7,13 +7,11 @@ import {
   Routes,
   Route,
   RouterProvider,
-  HashRouter,
+  BrowserRouter,
 } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <HashRouter>
-      <App />
-    </HashRouter>
-  </StrictMode>
+  <BrowserRouter basename="https://abdullahibbtwd.github.io/jicohsat-edu/">
+  <App/>
+  </BrowserRouter>
 );
